@@ -1,1 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="discipline.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Orbitron|Text+Me+One"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://pbutcher.uk/flipdown/css/flipdown/flipdown.css"
+    />
+    <script src="https://pbutcher.uk/flipdown/js/flipdown/flipdown.js"></script>
+    <title>Curiosity is the reason we live for</title>
+  </head>
+  <body>
 
+    <div class="text">
+        <h1 style="font-size: 3rem; color: #FFD700; margin-bottom: 30px; text-align: center;">Journey to Excellence</h1>
+        <p style="font-size: 1.1rem; color: #E0E0E0;">⏰ Embark on a journey, measured not by the ticking of a clock, but by the growth within your heart and the progress you make every day.</p>
+
+        <div id="flipdown" class="flipdown" style="width: 700px; margin: 0 0 0 10%;"></div>
+        <div style="margin: 20px auto; color: #F3E8FF;">
+            <p class="quote" style="font-size: 1.2rem; font-style: italic; margin: 20px 0;">"Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle." – Christian D. Larson</p>
+            <p>This personalized training program, stretching until 1st April 2025, is a canvas for you to paint your growth, discipline, and achievements.</p>
+            <ul style="list-style: none; padding: 0; text-align: left; display: inline-block; margin-top: 20px;">
+                <li style="margin: 10px 0; font-size: 1.2rem;">🎯 <strong>Forge unwavering discipline, determination, and focus.</strong> - Transform challenges into stepping stones.</li>
+                <li style="margin: 10px 0; font-size: 1.2rem;">💪 <strong>Nurture your physical health with daily rituals of strength.</strong> - Your body is the temple that houses your greatest dreams.</li>
+                <li style="margin: 10px 0; font-size: 1.2rem;">🤖 <strong>Ascend to the pinnacle of machine learning engineering.</strong> - Let each line of code be a testament to your relentless pursuit of knowledge.</li>
+                <li style="margin: 10px 0; font-size: 1.2rem;">💡 <strong>Embrace new technologies and tools as your allies.</strong> - Every tool mastered is another key to unlocking your potential.</li>
+                <li style="margin: 10px 0; font-size: 1.2rem;">🗣️ <strong>Hone your voice to articulate visions and inspire change.</strong> - Let your words weave the fabric of your future.</li>
+            </ul>
+        </div>
+        <div style="background: #333; padding: 20px; margin: 40px 0; border-left: 5px solid #007BFF; color: #ADD8E6;">
+            <p style="font-size: 1.1rem;">"Your limits are somewhere up there, waiting for you to reach beyond the stars." – Michelle Obama</p>
+            <p style="font-size: 1.1rem;">"Dedication, hard work, and not a word of impossibility." – Nikola Tesla</p>
+            <p style="font-size: 1.1rem;">"Embrace the glorious mess that you are." – Elizabeth Gilbert</p>
+        </div>
+    </div>
+    
+    <div
+      class="wrapper"
+      style="float: right; margin-top: 10px; margin-right: 50px"
+    >
+      <header>
+        <p class="current-date" style="color: white"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </header>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thu</li>
+          <li>Fri</li>
+          <li>Sat</li>
+        </ul>
+        <ul class="days"></ul>
+      </div>
+    </div>
+    <div class="container" style="margin-top: 17%">
+      <div class="ClockHolder" style="left: 30%">
+        <div class="WeekDays">
+          <span>sat</span>
+          <span>sun</span>
+          <span>mon</span>
+          <span>tue</span>
+          <span>wed</span>
+          <span>thu</span>
+          <span>fri</span>
+        </div>
+
+        <div class="TimeHolder">
+          <div class="TimeOptions">
+            <i class="fas fa-clock" data-title="Time"></i>
+            <i class="fas fa-stopwatch" data-title="StopWatch"></i>
+            <i class="far fa-clock" data-title="CountDown"></i>
+          </div>
+
+          <div class="Numbers">
+            <div class="NumberHolder H1">
+              <span class="d1"></span>
+              <span class="d2"></span>
+              <span class="d3"></span>
+              <span class="d4"></span>
+              <span class="d5"></span>
+              <span class="d6"></span>
+              <span class="d7"></span>
+            </div>
+
+            <div class="NumberHolder H2">
+              <span class="d1"></span>
+              <span class="d2"></span>
+              <span class="d3"></span>
+              <span class="d4"></span>
+              <span class="d5"></span>
+              <span class="d6"></span>
+              <span class="d7"></span>
+            </div>
+
+            <span>:</span>
+
+            <div class="NumberHolder M1">
+              <span class="d1"></span>
+              <span class="d2"></span>
+              <span class="d3"></span>
+              <span class="d4"></span>
+              <span class="d5"></span>
+              <span class="d6"></span>
+              <span class="d7"></span>
+            </div>
+
+            <div class="NumberHolder M2">
+              <span class="d1"></span>
+              <span class="d2"></span>
+              <span class="d3"></span>
+              <span class="d4"></span>
+              <span class="d5"></span>
+              <span class="d6"></span>
+              <span class="d7"></span>
+            </div>
+
+            <span>:</span>
+
+            <div class="NumberHolder S1">
+              <span class="d1"></span>
+              <span class="d2"></span>
+              <span class="d3"></span>
+              <span class="d4"></span>
+              <span class="d5"></span>
+              <span class="d6"></span>
+              <span class="d7"></span>
+            </div>
+
+            <div class="NumberHolder S2">
+              <span class="d1"></span>
+              <span class="d2"></span>
+              <span class="d3"></span>
+              <span class="d4"></span>
+              <span class="d5"></span>
+              <span class="d6"></span>
+              <span class="d7"></span>
+            </div>
+          </div>
+
+          <div class="AlarmInput">
+            <input type="number" placeholder="Enter Seconds" />
+          </div>
+
+          <div class="TimeFormat">
+            <div class="Type">
+              <span class="active">12hr</span>
+              <span>24hr</span>
+            </div>
+
+            <div class="Formats">
+              <span>am</span>
+              <span>pm</span>
+            </div>
+
+            <div class="control">
+              <span class="Start active"><i class="fas fa-play"></i>Start</span>
+              <span class="Pause"><i class="fas fa-pause"></i>Pause</span>
+              <span class="Stop active"><i class="fas fa-stop"></i>Stop</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
